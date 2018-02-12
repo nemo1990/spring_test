@@ -25,9 +25,9 @@
         <!--
         <context:exclude-filter type="assignable" expression="com.atguigu.spring.beans.annotation.repository.UserRepository"/>
         -->
-        <!--
+
         <context:include-filter type="assignable" expression="com.atguigu.spring.beans.annotation.repository.UserRepository"/>
-        -->
+
 
 
     </context:component-scan>
