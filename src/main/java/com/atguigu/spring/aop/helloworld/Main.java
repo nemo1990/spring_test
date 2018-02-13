@@ -10,6 +10,8 @@ public class Main {
         ArithmeticCalculator target = new ArithmeticCalculatorImpl();
         ArithmeticCalculator proxy = new ArithmeticCalculatorLoggingProxy(target).getLoggingProxy();
 
+        System.out.println(proxy.getClass().getName());
+        System.out.println(proxy instanceof ArithmeticCalculator);
         int result = proxy.add(1, 2);
         System.out.println("-->" + result);
 
